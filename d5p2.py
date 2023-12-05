@@ -1,6 +1,6 @@
 from collections import defaultdict
 
-input = "d5_test.txt"
+input = "d5_input.txt"
 
 def get_seed_nums(input):
     with open(input) as f:
@@ -10,7 +10,13 @@ def get_seed_nums(input):
                 seeds_str = line.split(":")[1].split()
                 for num in seeds_str:
                   seeds.append(int(num))  
-                return seeds
+    new_seeds = []  
+    for i,seed in enumerate(seeds):
+        if i%2 == 0:
+            new_seeds.append(seed)
+            for j in range(seeds[i+1]-1):
+                new_seeds.append(seed+j+1)
+    return new_seeds
 
 def map_converter(map_text):
 
@@ -49,8 +55,9 @@ def source_to_destination(source,map):
 
     return destination
 
+print(get_seed_nums(input))
+
 map_dictionary = create_maps(input)
-print(map_dictionary)
 
 min_location = None
 for seed in get_seed_nums(input):
@@ -68,6 +75,8 @@ for seed in get_seed_nums(input):
         min_location = location
 
 
+
 print(min_location)
+
 
 

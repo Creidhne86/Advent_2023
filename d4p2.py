@@ -25,10 +25,6 @@ with open(input) as f:
             for i in range(matching_numbers):
                 num_copies[f"card {card+i+1}"] += 1
         
-                
-        print(f"card {card} has {matching_numbers} matching numbers.")
-        print(num_copies)
-    print(num_copies)
     total_scratchcards = sum(num_copies.values()) + card
     print(f"Total scratchcards: {total_scratchcards}")
 

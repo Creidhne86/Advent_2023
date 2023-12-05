@@ -1,5 +1,3 @@
-import lib.aoc
-
 def solve(s, seed_interpreter):
     
     

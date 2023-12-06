@@ -56,7 +56,7 @@ def part2(s):
     answer = solve(s, seed_interpreter)
 
     print(answer)
-input = "d5_test.txt"
+input = "d5_input.txt"
 
 with(open(input)) as f:
     INPUT = f.read()

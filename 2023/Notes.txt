@@ -1,0 +1,3 @@
+revisit day 5 - I don't understand that one well at all
+revisit day 8 - Chinese Remainder theorum
+revisit day 9 - run recursively

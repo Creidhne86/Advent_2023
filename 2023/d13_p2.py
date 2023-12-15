@@ -101,12 +101,5 @@ for m, map in enumerate(data):
     sum += find_smudge_reflection(map)
 
         #print_map(map)            
-                
-      
-            
-
-
-
-    
 
 print(sum)

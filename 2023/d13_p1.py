@@ -1,5 +1,5 @@
 input = "d13_input.txt"
-#input = "d13_test.txt"
+input = "d13_test2.txt"
 
 with open(input, "r") as f:
     data = f.read().split("\n\n")
